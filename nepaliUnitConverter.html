@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Nepali Unit Converter</title>
+    <link href="Css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <a href="angular.html" class="navbar-brand">Nepali Unit Converter</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>1. Land unit converter</h3>
+            </div>
+            <div class="col-md-4">
+                <label>Value after decimal</label>
+                <select data-ng-model="noAfterDecimal" data-ng-options="d for d in noDecimal " class="form-control input-xsmall">
+                </select>
+            </div>
+        </div>
+
+        <div land-converter></div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>2.BSToAD-ADToBS converter</h3>
+            </div>
+        </div>
+
+        <div date-converter></div>
+        <div class="row">
+            <div class="col-md-8">
+                <h3>3.Mass unit converter</h3>
+            </div>
+        </div>
+
+        <div date-converter></div>
+    </div>
+
+
+    </div>
+		<div class="navbar navbar-inverse navbar-static-bottom">
+        </div>
+</body>
+</html>
+
+<script type="text/javascript" src="Scripts/nepali-english-dateconverter.js"></script>
+<script type="text/javascript" src="Scripts/dateconverter-helper.js"></script>
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/App/app.js"></script>
+<script type="text/javascript" src="Scripts/App/appcontroller.js"></script>
