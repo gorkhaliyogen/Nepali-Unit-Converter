@@ -1,0 +1,23 @@
+<div class=row>
+<div class="col-md-2">
+<select class="form-control input-small" data-ng-model="convert" data-ng-options="c for c in convertTo" ng-change="changeConvertTo()"></select>
+</div>
+<div class="col-md-2">
+<select class="form-control input-small" data-ng-model="year" data-ng-options="year for year in years" ng-change="hideResult()"></select>
+</div>
+<div class="col-md-2">
+<select class="form-control input-small" data-ng-model="month" data-ng-options="month.text for month in months" ng-change="hideResult()"></select>
+</div>
+<div class="col-md-2">
+<select class="form-control input-small" data-ng-model="day" data-ng-options="day for day in days" ng-change="hideResult()"></select>
+</div>
+<div class="col-md-2">
+<a class="btn btn-info" data-ng-click="convertDate()">{{btnText}}</a>
+</div>
+
+</div>
+<div ng-switch on="result">
+    <div ng-switch-when="true" class="date-result">
+        <span class="week-name">{{resultWeekDay}}</span><span class="converted-date">, {{resultMonth}} {{resultDay}}, {{resultYear}}</span>
+    </div>
+</div>
