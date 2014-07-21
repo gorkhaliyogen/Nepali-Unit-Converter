@@ -5,7 +5,7 @@ app.directive("massGsConverter",function(){
 		scope:true,
 		templateUrl:'Scripts/App/Templates/mass-gs-converter-template.html',
 		controller:function($scope,mathService){
-			$scope.tolaToGram=11.66;
+			$scope.tolaToGram=11.663 8038;
 			$scope.tola="";
 			$scope.gram="";
 			$scope.kiloGram="";
